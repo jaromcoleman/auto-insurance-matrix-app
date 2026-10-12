@@ -26,7 +26,7 @@ with col3:
     c2 = st.selectbox('Carrier 2:', carriers, index=1)
 
 # 5. Filter the data
-filtered_df = df[df['State'] == selected_state][['Coverage Purpose', c1, c2]]
+filtered_df = df[df['State'] == selected_state][[c1, c2]]
 
 # 6. Display the table
 st.markdown("---")
